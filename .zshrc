@@ -6,23 +6,6 @@ source $ZSH/oh-my-zsh.sh
 ZSH_THEME="wedisagree"
 plugins=(git)
 
-# bin
-export PATH=/bin:$PATH
-export PATH=/sbin:$PATH
-
-# usr
-export PATH=/usr/bin:$PATH
-export PATH=/usr/sbin:$PATH
-export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
-export PATH=/usr/local/heroku/bin:$PATH
-
-# haskell
-export PATH=$HOME/.cabal/bin:$PATH
-export PATH=$HOME/Library/Haskell/bin:$PATH
-export PATH=$HOME/.cabal/bin:$PATH
-export PATH=$HOME/Library/Haskell/bin/alex:$PATH
-
 # my lovely alias
 ## for mac
 alias home="cd ~/Documents/"
