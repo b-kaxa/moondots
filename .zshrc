@@ -2,9 +2,9 @@
 
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
 ZSH_THEME="wedisagree"
 plugins=(git)
+source $ZSH/oh-my-zsh.sh
 
 # my lovely alias
 ## for mac
