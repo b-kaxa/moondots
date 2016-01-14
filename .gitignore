@@ -1,9 +1,23 @@
+# gitignore init
 /*
 /.*
 !drop.sh
 
+# target files
 !/.gitconfig
 !/.gitignore
 !/.vimrc
 !/.zshenv
 !/.zshrc
+
+# ignore about IDE
+.idea
+.idea/workspace.xml
+
+# ignore about Vagrant
+.vagrant
+Vagrantfile
+
+# ignore about other files
+.DS_Store
+hosts
