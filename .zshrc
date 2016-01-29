@@ -43,13 +43,8 @@ export HISTCONTROL=ignoredups
 alias fuck='eval $(thefuck $(fc -ln -1))'
 alias FUCK='fuck'
 
-# pip
-export WORKON_HOME=$HOME/virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
-
 # enhancd
-source ~/.enhancd/zsh/enhancd.zsh
+[ -f ~/.enhancd ] && source ~/.enhancd/zsh/enhancd.zsh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
