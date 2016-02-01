@@ -4,7 +4,7 @@
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="wedisagree"
 plugins=(git)
-source $ZSH/oh-my-zsh.sh
+[ -f $ZSH/oh-my-zsh.sh  ] && source $ZSH/oh-my-zsh.sh
 
 # my lovely alias
 ## for mac
@@ -55,3 +55,6 @@ if [[ -x `which colordiff` ]]; then
 else
   alias diff='diff -u'
 fi
+
+# source local
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
