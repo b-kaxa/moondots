@@ -1,5 +1,5 @@
 # gitignore init
-/*
+#/*
 /.*
 !drop.sh
 
@@ -21,3 +21,4 @@ Vagrantfile
 # ignore about other files
 .DS_Store
 hosts
+bandai_switch.sh
