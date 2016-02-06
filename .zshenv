@@ -9,6 +9,7 @@ path=(
   /usr/sbin(N-/)
   /usr/local/bin(N-/)
   /usr/local/sbin(N-/)
+  /opt/php/bin(N-/)
   
   # for heroku
   /usr/local/heroku/bin(N-/)
