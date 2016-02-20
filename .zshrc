@@ -58,3 +58,6 @@ fi
 
 # source local
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# weather
+alias tenki='curl -4 wttr.in/Tokyo'
