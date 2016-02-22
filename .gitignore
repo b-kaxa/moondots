@@ -9,6 +9,7 @@
 !/.vimrc
 !/.zshenv
 !/.zshrc
+!/.aliases
 
 # ignore about IDE
 .idea

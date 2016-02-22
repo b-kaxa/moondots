@@ -1,0 +1,26 @@
+# my lovely alias
+## for mac
+alias home="cd ~/Documents/"
+
+## vagrant
+alias vs="vagrant ssh"
+alias vu="vagrant up"
+alias vh="vagrant halt"
+
+## git
+alias g="git"
+alias greset="git reset --hard HEAD\^"
+alias gl="git log --color --graph"
+
+## zsh
+alias zshrc="vi ~/.zshrc"
+alias szsh="source ~/.zshrc"
+autoload -U compinit
+compinit
+
+# fuck
+alias fuck='eval $(thefuck $(fc -ln -1))'
+alias FUCK='fuck'
+
+# weather
+alias tenki="curl -4 wttr.in/Tokyo"
