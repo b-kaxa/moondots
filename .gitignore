@@ -1,5 +1,5 @@
 # gitignore init
-#/*
+/*
 /.*
 !drop.sh
 
