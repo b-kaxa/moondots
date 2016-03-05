@@ -26,3 +26,5 @@ bandai_switch.sh
 bower_components
 tmp_bank
 phpunit.xml.dist
+Doxyfile
+html
