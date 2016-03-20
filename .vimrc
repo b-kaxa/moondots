@@ -30,3 +30,6 @@ set cursorline
 
 " マウス有効
 set mouse=a
+
+" 改行時インデント継続
+set autoindent
