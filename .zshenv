@@ -15,6 +15,7 @@ path=(
 
   # for anyenv
   ~/.anyenv/bin(N-/)
+  ~/.phpenv/bin(N-)
 
   # for haskell
   ~/.cabal/bin(N-/)
