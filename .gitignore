@@ -6,6 +6,7 @@
 # target files
 !/.gitconfig
 !/.gitignore
+!/.gitmessage.txt
 !/.vimrc
 !/.zshenv
 !/.zshrc
