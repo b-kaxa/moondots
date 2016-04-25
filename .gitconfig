@@ -1,11 +1,15 @@
 [push]
-	default = simple
+  default = simple
+
 [user]
-	name = b-kaxa
-	email = nisigin@gmail.com
+  name = b-kaxa
+  email = nisigin@gmail.com
+
 [color]
-	ui = true
+  ui = true
+
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 [core]
-	excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
