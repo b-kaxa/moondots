@@ -8,7 +8,7 @@ syntax on
 set number
 
 " tabのスペース数
-set tabstop=4
+set tabstop=2
 
 " 改行時に自動インデント
 set autoindent
