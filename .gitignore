@@ -31,3 +31,4 @@ Doxyfile
 html
 check_branch.sh
 tool/*
+rebuild.txt
