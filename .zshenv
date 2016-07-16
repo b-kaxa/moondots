@@ -5,6 +5,7 @@ typeset -U path
 path=(
   /bin(N-/)
   /sbin(N-/)
+  /usr/local(N-/)
   /usr/local/bin(N-/)
   /usr/local/sbin(N-/)
   /usr/bin(N-/)

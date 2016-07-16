@@ -1,5 +1,4 @@
 # gitignore init
-#/*
 /.*
 !drop.sh
 
@@ -14,18 +13,20 @@
 
 # ignore about IDE
 .idea
+.idea/*
 .idea/workspace.xml
 
 # ignore about Vagrant
 .vagrant
 Vagrantfile
 
+# ignore about node
+bower_components
+node_modules
+
 # ignore about other files
 .DS_Store
 hosts
-bandai_switch.sh
-bower_components
-tmp_bank
 phpunit.xml.dist
 Doxyfile
 html

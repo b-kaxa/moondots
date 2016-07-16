@@ -6,6 +6,9 @@ ZSH_THEME="wedisagree"
 plugins=(git)
 [ -f $ZSH/oh-my-zsh.sh  ] && source $ZSH/oh-my-zsh.sh
 
+export LC_ALL=pt_BR.UTF-8
+export LANG=pt_BR.UTF-8
+
 # cd & ls
 cd ()
 {
