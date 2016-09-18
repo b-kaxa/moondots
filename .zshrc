@@ -40,3 +40,7 @@ fi
 
 # source aliases
 [ -f ~/.aliases ] && source ~/.aliases
+
+# for golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
