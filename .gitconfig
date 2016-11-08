@@ -2,7 +2,7 @@
   default = simple
 
 [user]
-  name = b-kaxa
+  name = kzbandai
   email = nisigin@gmail.com
 
 [color]
@@ -14,3 +14,6 @@
 [core]
   excludesfile = ~/.gitignore
   whitespace = trailing-space,space-before-tab
+
+[fetch]
+	prune = true
