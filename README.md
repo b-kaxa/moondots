@@ -1,3 +1,3 @@
 # moondots
 
-dotfiles for b-kaxa
+dotfiles for kzbandai
