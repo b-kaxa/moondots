@@ -6,8 +6,9 @@ ZSH_THEME="wedisagree"
 plugins=(git)
 [ -f $ZSH/oh-my-zsh.sh  ] && source $ZSH/oh-my-zsh.sh
 
-export LC_ALL=pt_BR.UTF-8
-export LANG=pt_BR.UTF-8
+export LC_CTYPE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
 
 # cd & ls
 cd ()
@@ -34,6 +35,9 @@ if [[ -x `which colordiff` ]]; then
 else
   alias diff='diff -u'
 fi
+
+# for phpstorm terminal
+[[ -f ~/.zshenv ]] && source ~/.zshenv
 
 # source local
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local

@@ -11,6 +11,7 @@ alias vh="vagrant halt"
 alias g="git"
 alias greset="git reset --hard HEAD\^"
 alias gl="git log --color --graph"
+alias git-merged="git branch --merged | grep -v '*' | xargs -I % git branch -d %"
 
 ## zsh
 alias zshrc="vi ~/.zshrc"
