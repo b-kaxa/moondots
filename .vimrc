@@ -33,3 +33,11 @@ set mouse=a
 
 " 改行時インデント継続
 set autoindent
+
+" emacs key bind
+noremap <C-a> <HOME>
+noremap <C-e> <END>
+noremap <C-p> <UP>
+noremap <C-n> <DOWN>
+noremap <C-b> <LEFT>
+noremap <C-f> <RIGHT>
