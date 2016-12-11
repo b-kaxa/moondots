@@ -14,3 +14,6 @@
 [core]
   excludesfile = ~/.gitignore
   whitespace = trailing-space,space-before-tab
+
+[fetch]
+	prune = true

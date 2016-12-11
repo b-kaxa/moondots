@@ -16,10 +16,14 @@ path=(
 
   # for anyenv
   ~/.anyenv/bin(N-/)
-  ~/.phpenv/bin(N-)
+  ~/.phpenv/bin(N-/)
+  ~/.anyenv/envs/pyenv/bin(N-/)
 
   # for haskell
   ~/.cabal/bin(N-/)
   ~/Library/Haskell/bin(N-/)
   ~/Library/Haskell/bin/alex(N-/)
+
+  # for pear
+  ~/pear/bin(N-/)
 )
