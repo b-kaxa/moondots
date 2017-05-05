@@ -24,6 +24,9 @@ Vagrantfile
 bower_components
 node_modules
 
+# ignore direnv file
+.envrc
+
 # ignore about other files
 .DS_Store
 hosts
