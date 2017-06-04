@@ -18,6 +18,7 @@ path=(
   ~/.anyenv/bin(N-/)
   ~/.phpenv/bin(N-/)
   ~/.anyenv/envs/pyenv/bin(N-/)
+  ~/.anyenv/envs/ndenv/bin(N-/)
 
   # for haskell
   ~/.cabal/bin(N-/)
