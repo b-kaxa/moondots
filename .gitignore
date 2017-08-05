@@ -14,7 +14,6 @@
 # ignore about IDE
 .idea
 .idea/*
-.idea/workspace.xml
 
 # ignore about Vagrant
 .vagrant

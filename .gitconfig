@@ -19,3 +19,5 @@
 	prune = true
 [ghq]
 	root = /Users/kzbandai/go/src
+[credential]
+	helper = osxkeychain
