@@ -8,16 +8,22 @@ syntax on
 set number
 
 " tabのスペース数
-set tabstop=2
+set tabstop=4
 
 " 改行時に自動インデント
 set autoindent
 
+" 改行したら一段深くインデント
+set smartindent
+
 " タブを空白にする
 set expandtab
 
-" インデントの空白数
+" インデントの空白数 （自動挿入）
 set shiftwidth=4
+
+" インデントの空白数（tabを押した時）
+set softtabstop=4
 
 " ペーストするときにインデントをずれを起こさない
 set paste
@@ -41,3 +47,9 @@ noremap <C-p> <UP>
 noremap <C-n> <DOWN>
 noremap <C-b> <LEFT>
 noremap <C-f> <RIGHT>
+
+" 各ファイルごとの設定
+augroup fileTypeIndent
+	autocmd!
+	autocmd BufNewFile,BufRead *.json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+augroup END
