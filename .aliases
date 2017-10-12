@@ -19,13 +19,12 @@ alias szsh="source ~/.zshrc"
 autoload -U compinit
 compinit
 
-# fuck
-alias fuck='eval $(thefuck $(fc -ln -1))'
-alias FUCK='fuck'
-
 # docker
 alias do='docker exec -ti'
 alias dl='docker ps'
 
 # weather
 alias tenki="curl -4 wttr.in/Tokyo"
+
+# vim
+alias v="vim"
