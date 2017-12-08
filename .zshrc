@@ -76,3 +76,8 @@ bindkey '^r' peco-select-history
 # highlighting
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && \
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# for direnv
+[ -f /usr/local/bin/direnv ] && \
+export EDITOR=vim &&
+eval "$(direnv hook zsh)"
