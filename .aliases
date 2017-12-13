@@ -2,11 +2,6 @@
 ## for mac
 alias home="cd ~/Documents/"
 
-## vagrant
-alias vs="vagrant ssh"
-alias vu="vagrant up"
-alias vh="vagrant halt"
-
 ## git
 alias g="git"
 alias greset="git reset --hard HEAD\^"
