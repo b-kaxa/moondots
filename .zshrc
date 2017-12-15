@@ -50,7 +50,7 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
 # for peco
-alias fn='cd "$(find . -type d | peco)"'
+alias fn='cd "$(find . -type d | grep -v "\/\." | peco)"'
 
 # for zsh
 bindkey -e
