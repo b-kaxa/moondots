@@ -3,7 +3,6 @@
 # oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="wedisagree"
-plugins=(git)
 [ -f $ZSH/oh-my-zsh.sh  ] && source $ZSH/oh-my-zsh.sh
 
 export LC_CTYPE="en_US.UTF-8"
