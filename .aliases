@@ -11,6 +11,7 @@ alias gpu="git pull"
 alias gst="git status"
 alias gc="git commit -v"
 alias ga="git add"
+alias gd="git diff"
 
 ## zsh
 alias zshrc="vi ~/.zshrc"
