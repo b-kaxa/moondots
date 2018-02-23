@@ -80,3 +80,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [ -f /usr/local/bin/direnv ] && \
 export EDITOR=vim &&
 eval "$(direnv hook zsh)"
+
+## for git checkout
+alias gch='git branch -a --sort=-authordate | cut -b 3- | perl -pe '\''s#^remotes/origin/###'\'' | perl -nlE '\''say if !$c{$_}++'\'' | grep -v -- "->" | peco | xargs git checkout'

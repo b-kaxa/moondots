@@ -22,3 +22,7 @@
 	root = /Users/kzbandai/go/src
 [credential]
 	helper = osxkeychain
+[rebase]
+	autosquash = true
+[commit]
+	verbose = true
