@@ -10,6 +10,7 @@
 !/.zshenv
 !/.zshrc
 !/.aliases
+!/.tmux.conf
 
 # ignore about IDE
 .idea
