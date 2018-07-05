@@ -20,12 +20,11 @@ alias szsh="source ~/.zshrc"
 autoload -U compinit
 compinit
 
-# docker
-alias do='docker exec -ti'
-alias dl='docker ps'
-
 # weather
 alias tenki="curl -4 wttr.in/Tokyo"
 
 # vim
 alias v="vim"
+
+# tmux reload
+alias tmux-reload="tmux source-file ~/.tmux.conf"
