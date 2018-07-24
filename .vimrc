@@ -4,6 +4,9 @@ set encoding=utf-8
 " 構文ごとに色分け
 syntax on
 
+" ペーストするときにインデントをずれを起こさない
+set paste
+
 " 行番号表示
 set number
 
@@ -24,9 +27,6 @@ set shiftwidth=2
 
 " インデントの空白数（tabを押した時）
 set softtabstop=2
-
-" ペーストするときにインデントをずれを起こさない
-set paste
 
 " 256色モード
 set t_Co=256
@@ -50,6 +50,6 @@ noremap <C-f> <RIGHT>
 
 " 各ファイルごとの設定
 augroup fileTypeIndent
-	autocmd!
-	autocmd BufNewFile,BufRead *.json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+  autocmd!
+  autocmd BufNewFile,BufRead *.json setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
