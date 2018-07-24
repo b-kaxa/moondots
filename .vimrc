@@ -7,8 +7,11 @@ syntax on
 " 行番号表示
 set number
 
+" タブを空白にする
+set expandtab
+
 " tabのスペース数
-set tabstop=4
+set tabstop=2
 
 " 改行時に自動インデント
 set autoindent
@@ -16,14 +19,11 @@ set autoindent
 " 改行したら一段深くインデント
 set smartindent
 
-" タブを空白にする
-set expandtab
-
 " インデントの空白数 （自動挿入）
-set shiftwidth=4
+set shiftwidth=2
 
 " インデントの空白数（tabを押した時）
-set softtabstop=4
+set softtabstop=2
 
 " ペーストするときにインデントをずれを起こさない
 set paste
