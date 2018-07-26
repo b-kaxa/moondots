@@ -31,3 +31,6 @@ alias tmux-reload="tmux source-file ~/.tmux.conf"
 
 # trans
 alias tn="trans :ja"
+
+# kubernetes
+alias k="kubectl"
