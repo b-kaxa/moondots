@@ -90,6 +90,10 @@ if [ $SHLVL = 1 ]; then
 	tmux
 fi
 
+## for nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+## for kubernetes completion
+source <(kubectl completion zsh)
