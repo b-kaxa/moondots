@@ -24,11 +24,9 @@ cd ()
 }
 
 # for history
-export HISTSIZE=2000
-export HISTCONTROL=ignoreboth
-export HISTTIMEFORMAT='%Y%m%d %T  '
-export HISTCONTROL=ignorespace
-export HISTCONTROL=ignoredups
+export HISTSIZE=1000
+export HISTCONTROL=ignoreboth:ignorespace:ignoredups
+HISTTIMEFORMAT='%Y-%m-%dT%T%z '
 
 # enhancd
 [ -f ~/.enhancd ] && source ~/.enhancd/zsh/enhancd.zsh
@@ -56,9 +54,6 @@ fi
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# for peco
-alias fn='cd "$(find . -type d | grep -v "\/\." | peco)"'
-
 # for zsh
 bindkey -e
 
@@ -72,7 +67,8 @@ function peco-select-history() {
 	fi
 	BUFFER=$(\history -n 1 | \
 	eval $tac | \
-	peco --query "$LBUFFER")
+	peco --query "$LBUFFER" | \
+  sed 's/\\n/\n/')
 	CURSOR=$#BUFFER
 	zle clear-screen
 }
