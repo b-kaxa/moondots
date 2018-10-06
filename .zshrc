@@ -88,12 +88,6 @@ eval "$(direnv hook zsh)"
 ## for git checkout
 alias gch='git branch -a --sort=-authordate | cut -b 3- | perl -pe '\''s#^remotes/origin/###'\'' | perl -nlE '\''say if !$c{$_}++'\'' | grep -v -- "->" | peco | xargs git checkout'
 
-## tmux
-# 初回シェル時のみ tmux実行
-if [ $SHLVL = 1 ]; then
-	tmux
-fi
-
 ## for nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
