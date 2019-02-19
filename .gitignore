@@ -1,8 +1,8 @@
-# gitignore init
+# init
 /.*
 !drop.sh
 
-# target files
+# non-ignore targets
 !/.gitconfig
 !/.gitignore
 !/.gitmessage.txt
@@ -12,22 +12,25 @@
 !/.aliases
 !/.tmux.conf
 
-# ignore about IDE
+# IDE
 .idea
 .idea/*
 
-# ignore about Vagrant
+# Vagrant
 .vagrant
 Vagrantfile
 
-# ignore about node
+# node
 bower_components
 node_modules
 
-# ignore direnv file
+# direnv
 .envrc
 
-# ignore about other files
+# python
+venv/*
+
+# other files
 .DS_Store
 hosts
 phpunit.xml.dist

@@ -8,6 +8,7 @@ path=(
   /usr/local(N-/)
   /usr/local/bin(N-/)
   /usr/local/sbin(N-/)
+  /usr/local/anaconda3/bin(N-/)
   /usr/bin(N-/)
   /usr/sbin(N-/)
   
