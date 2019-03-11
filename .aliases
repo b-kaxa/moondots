@@ -7,12 +7,13 @@ alias g="git"
 alias greset="git reset --hard HEAD\^"
 alias gl="git log --color --graph"
 alias gmerged="git branch --merged | grep -v '*' | xargs -I % git branch -d %"
-alias gclosed="git branch --no-contains | grep -v '*' | xargs -I % git branch -D %"
+# alias gclosed="git branch --no-contains | grep -v '*' | xargs -I % git branch -D %"
 alias gpu="git pull"
 alias gst="git status"
 alias gc="git commit -v"
 alias ga="git add"
 alias gd="git diff"
+alias gch='git branch -a --sort=-authordate | cut -b 3- | perl -pe '\''s#^remotes/origin/###'\'' | perl -nlE '\''say if !$c{$_}++'\'' | grep -v -- "->" | peco | xargs git checkout'
 
 ## zsh
 alias zshrc="vi ~/.zshrc"
