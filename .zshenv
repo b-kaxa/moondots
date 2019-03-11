@@ -28,4 +28,7 @@ path=(
 
   # for pear
   ~/pear/bin(N-/)
+
+  # istioctl
+  ~/istio-1.0.6/bin(N-)
 )
