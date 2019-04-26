@@ -25,9 +25,9 @@ cd ()
 }
 
 # for history
-export HISTSIZE=1000
-export HISTCONTROL=ignoreboth:ignorespace:ignoredups
-HISTTIMEFORMAT='%Y-%m-%dT%T%z '
+export HISTSIZE=10000
+export HISTCONTROL=ignoreboth:erasedups
+export HISTTIMEFORMAT='%Y-%m-%d %T%z '
 
 # enhancd
 [ -f ~/.enhancd ] && source ~/.enhancd/zsh/enhancd.zsh
