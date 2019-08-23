@@ -11,9 +11,9 @@ alias gmerged="git branch --merged | grep -v '*' | xargs -I % git branch -d %"
 alias gpu="git pull"
 alias gst="git status"
 alias gc="git commit -v"
-alias ga="git add"
 alias gd="git diff"
 alias gch='git branch -a --sort=-authordate | cut -b 3- | perl -pe '\''s#^remotes/origin/###'\'' | perl -nlE '\''say if !$c{$_}++'\'' | grep -v -- "->" | peco | xargs git checkout'
+alias gpo='git push origin --set-upstream $(git rev-parse --abbrev-ref HEAD)'
 
 ## zsh
 alias zshrc="vi ~/.zshrc"
