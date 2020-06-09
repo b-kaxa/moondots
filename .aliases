@@ -7,7 +7,7 @@ alias g="git"
 alias greset="git reset --hard HEAD\^"
 alias gl="git log --color --graph"
 alias gmerged="git branch --merged | grep -v '*' | xargs -I % git branch -d %"
-# alias gclosed="git branch --no-contains | grep -v '*' | xargs -I % git branch -D %"
+alias glocal="git branch | egrep -v '\*|develop|master' | xargs git branch -D"
 alias gpu="git pull"
 alias gst="git status"
 alias gc="git commit -v"
@@ -35,3 +35,7 @@ alias tn="trans :ja"
 
 # kubernetes
 alias k="kubectl"
+
+# python
+alias pip="pip3"
+alias python="python3"
