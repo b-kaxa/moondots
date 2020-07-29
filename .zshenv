@@ -31,4 +31,7 @@ path=(
 
   # istioctl
   ~/istio-1.0.6/bin(N-)
+
+  # helm
+  /usr/local/opt/helm@2/bin(N-/)
 )

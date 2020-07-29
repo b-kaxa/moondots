@@ -2,6 +2,7 @@
 
 ## oh-my-zsh plugins
 plugins=(
+  zsh-kubectl-prompt
   docker
 )
 
