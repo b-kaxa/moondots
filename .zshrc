@@ -29,6 +29,13 @@ cd ()
 export HISTSIZE=10000
 export HISTCONTROL=ignoreboth:erasedups
 export HISTTIMEFORMAT='%Y-%m-%d %T%z '
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_NO_STORE
+setopt HIST_SAVE_NO_DUPS
 
 # enhancd
 [ -f ~/.enhancd ] && source ~/.enhancd/zsh/enhancd.zsh
