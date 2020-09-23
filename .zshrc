@@ -110,3 +110,11 @@ if [ -f '/Users/kazukibandai/google-cloud-sdk/completion.zsh.inc' ]; then . '/Us
 
 # for stern
 source <(stern --completion=zsh)
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# for iTerm2 status bar
+iterm2_print_user_vars() {
+  iterm2_set_user_var kubecontext $(kubectl config current-context)
+}
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
