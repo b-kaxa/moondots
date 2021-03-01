@@ -20,6 +20,9 @@
 .vagrant
 Vagrantfile
 
+# PHP
+vendor
+
 # node
 bower_components
 node_modules
