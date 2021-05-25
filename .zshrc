@@ -50,15 +50,6 @@ else
   alias diff='diff -u'
 fi
 
-# for phpstorm terminal
-[[ -f ~/.zshenv ]] && source ~/.zshenv
-
-# source local
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
-
-# source aliases
-[ -f ~/.aliases ] && source ~/.aliases
-
 # for golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
@@ -118,3 +109,22 @@ iterm2_print_user_vars() {
   iterm2_set_user_var kubecontext $(kubectl config current-context)
 }
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# for phpstorm terminal
+[[ -f ~/.zshenv ]] && source ~/.zshenv
+
+export PYENV_ROOT="$HOME/.anyenv/envs/pyenv"
+eval "$(pyenv init --path)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# source local
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# source aliases
+[ -f ~/.aliases ] && source ~/.aliases
+
+# for auto complete
+autoload -U compinit
+compinit

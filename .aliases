@@ -18,8 +18,6 @@ alias gpo='git push origin --set-upstream $(git rev-parse --abbrev-ref HEAD)'
 ## zsh
 alias zshrc="vi ~/.zshrc"
 alias szsh="source ~/.zshrc"
-autoload -U compinit
-compinit
 
 # weather
 alias tenki="curl -4 wttr.in/Tokyo"

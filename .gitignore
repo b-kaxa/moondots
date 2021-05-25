@@ -21,7 +21,7 @@
 Vagrantfile
 
 # node
-bower_components
+# bower_components
 node_modules
 .yarn/
 
